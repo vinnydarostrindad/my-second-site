@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background: rgb(5, 22, 2);
+    font-family: 'poppins', sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 1px 0 20px rgb(1, 26, 1);
+}
+
+.logo {
+    letter-spacing: -3px;
+}
+
+.header .logo span:first-child {
+    color: rgb(6, 185, 6);
+}
+
+.header .logo span:last-child {
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    height: 25px;
+    width: 300px;
+    margin: 0 30px;
+    border: 3px solid rgb(6, 185, 6);
+    border-radius: 4px;
+}
+
+.search:focus {
+    border: 5px solid rgb(6, 185, 6);
+    background: rgb(199, 199, 199);
+}
+
+.menu, .submenu {
+    list-style: none;
+}
+
+.menu a, .submenu a {
+    text-decoration: none;
+    color: white;
+    padding: 17px;
+    font-size: 14px;
+    display: block;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    transition: 0.3s;
+}
+
+.menu li:hover a {
+    background: rgb(6, 185, 6);
+}
+
+.menu li:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu .submenu li:hover > a {
+    background: rgb(6, 70, 6);
+}
+
+.submenu .submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.submenu .submenu li:hover > a {
+    background: green;
+}
+
+.submenu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    min-width: 110%;
+    transition: 0.1s;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content {
+    background: green;
+    width: 55%;
+    min-height: 567px;
+    display: inline-block;
+    margin: 90px 0px 0px 75px;
+    padding: 35px;
+    border-radius: 5% 20% 0% 0%;
+}
+
+.content h1 {
+    margin-bottom: 15px;
+    text-shadow: 1px 2px 1px black;
+}
+
+.content p {
+    line-height: 30px;
+    word-spacing: 5px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+div {
+    background: black;
+    border-radius: 50%;
+    margin: 50px 50px 0 0;
+}
+
+div img {
+    width: 400px;
+}
+
+
+

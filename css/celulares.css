@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background: rgb(5, 22, 2);;
+    font-family: 'poppins', sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 1px 0 20px rgb(1, 26, 1);
+}
+
+.logo {
+    letter-spacing: -3px;
+}
+
+.header .logo span:first-child {
+    color: rgb(6, 185, 6);
+}
+
+.header .logo span:last-child {
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    height: 25px;
+    width: 300px;
+    margin: 0 30px;
+    border: 3px solid rgb(6, 185, 6);
+    border-radius: 4px;
+}
+
+.search:focus {
+    border: 5px solid rgb(6, 185, 6);
+    background: rgb(199, 199, 199);
+}
+
+.menu, .submenu {
+    list-style: none;
+}
+
+.menu a, .submenu a {
+    text-decoration: none;
+    color: white;
+    padding: 17px;
+    font-size: 14px;
+    display: block;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    transition: 0.3s;
+}
+
+.menu li:hover a {
+    background: rgb(6, 185, 6);
+}
+
+.menu li:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu .submenu li:hover > a {
+    background: rgb(6, 70, 6);
+}
+
+.submenu .submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.submenu .submenu li:hover > a {
+    background: green;
+}
+
+.submenu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    min-width: 110%;
+    transition: 0.1s;
+}
+
+.container {
+    background: green;
+    width: 1150px;
+    min-height: 557px;
+    margin: 100px auto 0;
+    padding: 50px;
+    border-radius: 96px 96px 0 0;
+}
+
+.celulares-vender {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 25px;
+}
+
+.celulares-vender > div {
+    border: 5px solid rgb(5, 22, 2);
+    margin: 30px;
+    background: #fffdfe;
+    width: 240px;
+    height: 467px;
+}
+
+.celulares-vender div .img {
+    width: 230px;
+    height: 237px;
+    display: flex;
+    align-items: center;
+}
+
+.celulares-vender div img{
+    width: 230px;
+    padding: 10px;
+}
+
+.celulares-vender div p:nth-child(2){
+    color: black;
+    text-align: justify;
+    padding: 15px 15px 5px;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.celulares-vender div p:nth-child(3) {
+    color: green;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.celulares-vender div p:nth-child(4) {
+   font-weight: lighter;
+   color: rgb(119, 119, 119);
+   margin: -10px 0 5px 15px;
+}
+
+.celulares-vender div button {
+    background: green;
+    color: white;
+    width: 200px;
+    height: 50px;
+    margin: 0 15px;
+    border: none;
+    border-radius: 5px;
+}
