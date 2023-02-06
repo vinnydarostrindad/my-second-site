@@ -1,0 +1,61 @@
+@media (max-width: 1240px) {
+    .content {
+        width: 95%;
+        margin: 70px auto 150px;
+        border-radius: 50px 50px 0 0;
+        padding: 15px;
+    }
+
+    .aside {
+        border-top: 5px solid #051602;
+        flex-direction: column;
+        width: 100%;
+        height: 150px;
+        margin: 0;
+        border-radius: 0px 0px 0px 0px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .aside h1 {
+        font-size: 15px;
+    }
+
+    .jornada-conhecimento {
+        width: 95%;
+        margin-top: -15px;
+    }
+    
+    .jornada-experiencia {
+        width: 95%;
+        margin-top: 5px;
+    }
+    
+    .porcentagem {
+        text-shadow: 0 0 15px rgb(0, 0, 0);
+        margin-top: -8px;
+    }
+    
+    .barra-experiencia, .barra-conhecimento {
+        width: 100%;
+        height: 25px;
+        border: 5px solid rgb(5, 22, 2);
+        margin-top: -2px;
+        text-align: left;
+    }
+    
+    .subindo-barra-conhecimento, .subindo-barra-experiencia {
+        background-color: #29f500;
+        height: 15px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .container .content {
+        border-radius: 50px 50px 0 0;
+        padding: 15px;
+    }
+}

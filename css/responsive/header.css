@@ -1,0 +1,29 @@
+@media (max-width: 1108px) {
+    .nav-menu-menor {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0 35px;
+    }
+
+    .menu.fechar {
+        display: none;
+    }
+
+    .barras-menu-menor.abrir {
+        display: block;
+    }
+
+    .nav-menu-menor {
+        display: block;
+    }
+}
+
+@media (max-width: 280px) {
+    .header {
+        padding: 5px;
+    }
+}

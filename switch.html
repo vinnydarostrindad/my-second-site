@@ -9,16 +9,17 @@
     <link rel="shortcut icon" href="img/img-gerais/logo.png" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/switch.css">
+    <link rel="stylesheet" href="css/responsive/switch.css">
+    <link rel="stylesheet" href="css/responsive/header.css">
 </head>
-<body>
+<body class="body">
 
     <header class="header">
         <h1 class="logo"><span>Username</span><span>Tagline</span></h1>
-
         <nav class="navbar">
-            <input type="text" class="search" placeholder=" 🔍  Buscar (Só enfeite)">
-            <ul class="menu">
+            <ul class="menu fechar">
                 <li>
                     <a href="index.html">Home</a>
                 </li>
@@ -87,8 +88,98 @@
                     </ul>
                 </li>
             </ul>
+            <div class="barras-menu-menor abrir">
+                <div class="barras" onclick="abrirMenuMenor()">
+                    <div class="barra barra1"></div>
+                    <div class="barra barra2"></div>
+                    <div class="barra barra3"></div>
+                </div>      
+            </div>
         </nav>
     </header>    
+    <nav class="nav-menu-menor">
+        <div class="menu-menor-opacity fechar" id="menuMenorOpacity"></div>
+        <div class="menu-menor fechar" id="menuMenor">
+            <div class="barras-menu-menor dentro">
+                <div class="barras" onclick="abrirMenuMenor()">
+                    <div class="barra barra1"></div>
+                    <div class="barra barra2"></div>
+                    <div class="barra barra3"></div>
+                </div>      
+            </div>
+            <div class="lista-menu-menor">
+                <ul class="menu-menor-list">
+                    <li class="home">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="quem-somos">
+                        <a href="#">Quem Sou</a>
+                        <ul class="submenu-menor">
+                            <li>
+                                <a href="historia.html">história</a>
+                            </li>
+                            <li>
+                                <a href="missao.html">Missão</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="produtos">
+                        <a href="#">Produtos</a>
+                        <ul class="submenu-menor">
+                            <li>
+                                <a href="computadores.html">Computadores</a>
+                            </li>
+                            <li>
+                                <a href="celulares.html">Celulares</a>
+                            </li>
+                            <li>
+                                <a href="headseat.html">HeadSets</a>
+                            </li>
+                            <li class="consoles">
+                                <a href="#">Consoles</a>
+                                <ul class="submenu-menor">
+                                    <li>
+                                        <a href="playstation.html">Playstation</a>
+                                    </li>
+                                    <li>
+                                        <a href="xbox.html">Xbox</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Swich</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="social">
+                        <a href="#">Redes Sociais</a>
+                        <ul class="submenu-menor">
+                            <li>
+                                <a href="#">Instagran</a>
+                            </li>
+                            <li>
+                                <a href="#">LinkedIn</a>
+                            </li>
+                            <li>
+                                <a href="#">GitHub</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="contato">
+                        <a href="#">Contato</a>
+                        <ul class="submenu-menor">
+                            <li>
+                                <a href="https://wa.me/5533997326202" target="_blank">WhattsApp</a>
+                            </li>
+                            <li>
+                                <a href="mailto:VinnyDaros.Izap@gmail.com">Email</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </nav>
 
     <main class="container">
         <article class="content">
@@ -164,6 +255,7 @@
             </div>
         </article>
     </main>
-    
+       
+    <script src="js/menuMenor.js"></script>
 </body>
 </html>
