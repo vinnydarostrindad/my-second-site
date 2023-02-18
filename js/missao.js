@@ -6,6 +6,9 @@ var objetivosExperiencia = 0;
 var experienciaSelecionados = 0;
 var largura = window.innerWidth;
 
+barraConhecimento()
+barraExperiencia()
+
 window.addEventListener('resize', function () {
     barraConhecimento()
     barraExperiencia()
